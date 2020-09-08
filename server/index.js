@@ -92,7 +92,7 @@ io.on("connection", socket => {
 
 
 
-process.env.NODE_ENV = "production"
+
 // Serve static assets if in production
 if (process.env.NODE_ENV === "production") {
 
