@@ -4,10 +4,12 @@ import { Comment, Tooltip, Avatar } from 'antd';
 
 function ChatCard(props) {
     //console.log(props);
-    const chatRightAlign = props.user._id === props.chat.sender._id;
-    console.log(chatRightAlign);
-    
+    //console.log(chatRightAlign);
+    const chatRightAlign = false;
+        if(props.user._id)
+            chatRightAlign = props.user._id === props.chat.sender._id;
     return (
+        
         <div style={{ width: '100%', display: 'flex', justifyContent: chatRightAlign?'flex-end':'flex-start'}}>
             <Comment
                 author={props.chat.sender.name}

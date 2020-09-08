@@ -34,7 +34,7 @@ class chatPage extends Component {
 
     renderCards = () => {
         //console.log(this.props.user);
-        console.log(this.props.chats)
+        //console.log(this.props.chats)
         //console.log(this.props.chats.chats);
         if(this.props.chats.chats){
             if(this.props.chats.chats.isAuth !== undefined)
@@ -49,7 +49,7 @@ class chatPage extends Component {
     }
 
     onDrop = (files) =>{
-        console.log(files);
+        //console.log(files);
         let formData = new FormData;
         const config = {
             header: {'content-type': 'multipart/form-data'}
