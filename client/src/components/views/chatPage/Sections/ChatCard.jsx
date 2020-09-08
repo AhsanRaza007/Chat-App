@@ -24,14 +24,14 @@ function ChatCard(props) {
                             <video
                                 style={{ maxWidth: '300px' }}
                                 //src={`http://localhost:5000/${props.chat.message}`}
-                                src={`http://localhost:5000/${props.chat.message}`}
+                                src={`https://secure-dusk-44145.herokuapp.com/${props.chat.message}`}
                                 alt="video"
                                 type="video/mp4" controls
                             />
                             :
                             <img
                                 style={{ maxWidth: '300px' }}
-                                src={`http://localhost:5000/${props.chat.message}`}
+                                src={`https://secure-dusk-44145.herokuapp.com/${props.chat.message}`}
                                 alt="img"
                             />
                         :

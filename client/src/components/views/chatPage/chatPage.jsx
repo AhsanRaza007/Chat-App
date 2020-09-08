@@ -17,7 +17,7 @@ class chatPage extends Component {
         this.messagesEnd.scrollIntoView({behavior: 'smooth'})
     }
     componentDidMount(){
-        let server="http://localhost:5000";
+        let server="https://secure-dusk-44145.herokuapp.com/";
         this.socket = io(server)
         this.props.dispatch(getChats())
         this.socket.on("Output Chat Message", messageFromBackEnd=>{
