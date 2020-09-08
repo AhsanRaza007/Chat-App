@@ -5,7 +5,7 @@ import { Comment, Tooltip, Avatar } from 'antd';
 function ChatCard(props) {
     //console.log(props);
     //console.log(chatRightAlign);
-    const chatRightAlign = false;
+    let chatRightAlign = false;
         if(props.user._id)
             chatRightAlign = props.user._id === props.chat.sender._id;
     return (
